@@ -5,6 +5,8 @@ import { ReactComponent as MainSvg } from '../../assets/icons/main.svg'
 import { ReactComponent as ProductSvg } from '../../assets/icons/product.svg'
 import { ReactComponent as PercentSvg } from '../../assets/icons/percent.svg'
 import { ReactComponent as CabinetSvg } from '../../assets/icons/cabinet.svg'
+import { ReactComponent as LogOutSvg } from '../../assets/icons/log.svg'
+
 import Button from "./Button/Button";
 
 const Sidebar = () => {
@@ -14,24 +16,31 @@ const Sidebar = () => {
                 <LogoSvg />
             </S.Logo>
             <Button
-                path='/main'
+                path='/'
                 icon={<MainSvg />}
                 title='Main page'
             />
             <Button
                 path='/products'
                 icon={<ProductSvg />}
-                title='Main page'
+                title='My Products'
             />
             <Button
                 path='/sales'
                 icon={<PercentSvg />}
-                title='Main page'
+                title='My sales'
             />
             <Button
                 path='/cabinet'
                 icon={<CabinetSvg />}
-                title='Main page'
+                title='Personal Cabinet'
+            />
+            <S.Dev />
+            <Button
+                path='/logout'
+                icon={<LogOutSvg />}
+                title='Log out'
+                logOut
             />
         </S.Sidebar>
     );
