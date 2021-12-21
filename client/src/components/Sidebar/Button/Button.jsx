@@ -1,16 +1,12 @@
 import React from 'react';
 import * as S from './ButtonStyle'
-import { ReactComponent as HomeSvg } from '../../../assets/icons/home.svg'
 
-const Button = () => {
+
+const Button = ({path, icon, title}) => {
     return (
-        <S.Button>
-            <S.Icon>
-                <HomeSvg />
-            </S.Icon>
-            <S.Title>
-                Main page
-            </S.Title>
+        <S.Button to={path}>
+            <S.Icon children={icon} />
+            <S.Title children={title}/>
         </S.Button>
     );
 };
