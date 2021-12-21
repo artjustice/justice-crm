@@ -1,6 +1,7 @@
 import * as S from './AppStyle'
 import Sidebar from "../Sidebar/Sidebar";
 import {Route, Switch} from "react-router-dom";
+import Main from "../Content/Main/Main";
 import Content from "../Content/Content";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
           <Route path='/' exact>
               <S.App>
                   <Sidebar />
-                  <Content />
+                  <Content content={<Main />} />
               </S.App>
           </Route>
       </Switch>
