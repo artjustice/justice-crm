@@ -1,7 +1,7 @@
 import React, {useRef} from 'react'
-import * as yup from 'yup';
+import * as yup from 'yup'
 import * as S from './RegFormStyle'
-import { Formik } from 'formik';
+import { Formik, Form } from 'formik';
 import Input from './Input/Input'
 import FormButton from "../../common/FormButton/FormButton";
 
@@ -117,7 +117,7 @@ const RegForm = () => {
                                 setFieldValue('confirmPassword', value.trim());
                             }}
                         />
-                        <button type='submit'>submit</button>
+                        <button type="submit">Submit</button>
                         {/*<FormButton title='Create account' marginTop='40px' />*/}
                         {/*<S.Bottom>*/}
                         {/*    <S.CreateButton type='submit' disabled={isSubmitting || regLoading}>*/}

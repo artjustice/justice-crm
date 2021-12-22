@@ -11,9 +11,9 @@ function App() {
           <Route path='/' exact>
               <S.App>
 
-                  <Sidebar />
-                  <Content content={<Main />} />
-                  {/*<Auth />*/}
+                  {/*<Sidebar />*/}
+                  {/*<Content content={<Main />} />*/}
+                  <Auth />
               </S.App>
           </Route>
       </Switch>
