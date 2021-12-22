@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-export const Main = styled.div`
-`
 export const Dev = styled.div`
   margin: 32px 0 40px 0;
   width: 100%;
@@ -30,7 +28,7 @@ export const Bottom = styled.div`
 `
 export const Right = styled.div`
   margin-left: 24px;
-  width: 735px;
+  width: 100%;
   height: 569px;
   background: #FFFFFF;
   border-radius: 3px;

@@ -6,6 +6,10 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+  body, #root {
+    height: 100%;
+    width: 100%;
+  }
   button {
     outline: none;
     padding: 0;

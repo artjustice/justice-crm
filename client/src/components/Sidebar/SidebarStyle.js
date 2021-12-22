@@ -6,7 +6,7 @@ export const Sidebar = styled.nav`
   flex-direction: column;
   align-items: center;
   width: 274px;
-  height: 100%;
+  min-height: 100vh;
   background-color: #FFFFFF;
 `
 export const Logo = styled.div`
