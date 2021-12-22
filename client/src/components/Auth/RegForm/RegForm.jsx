@@ -122,12 +122,7 @@ const RegForm = () => {
                                 setFieldValue('confirmPassword', value.trim());
                             }}
                         />
-<<<<<<< HEAD
                         <FormButton title='Create account' marginTop='40px' type='submit'/>
-=======
-                        <button type="submit">Submit</button>
-                        {/*<FormButton title='Create account' marginTop='40px' />*/}
->>>>>>> 5e27f4d0fa5158781da0b6a58177feced597cb75
                         {/*<S.Bottom>*/}
                         {/*    <S.CreateButton type='submit' disabled={isSubmitting || regLoading}>*/}
                         {/*        {regLoading ? <SpinnerSvg /> : 'Продолжить регистрацию'}*/}

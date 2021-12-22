@@ -6,7 +6,7 @@ import Content from "../Content/Content";
 import Auth from "../Auth/Auth";
 
 function App() {
-    const isAuth = true
+    const isAuth = false
   return (
       <Switch>
           <S.App>
