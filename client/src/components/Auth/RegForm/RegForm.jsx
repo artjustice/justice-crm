@@ -57,26 +57,31 @@ const RegForm = () => {
                 validateOnChange={false}
                 validateOnBlur={false}
                 onSubmit={(values, { setSubmitting }) => {
-                    console.log('submitting')
+                    console.log(values)
                     setSubmitting(false);
                 }}
             >
                 {({isSubmitting, setFieldValue}) => (
                     <S.StyledForm>
-                        <Input
-                            isSubmitting={isSubmitting}
-                            label="First name"
-                            name="firstName"
-                            type="text"
-                            placeholder="First name"
-                        />
-                        <Input
-                            isSubmitting={isSubmitting}
-                            label="Last name"
-                            name="lastName"
-                            type="text"
-                            placeholder="Last name"
-                        />
+                        <S.Top>
+                            <Input
+                                isSubmitting={isSubmitting}
+                                label="First name"
+                                name="firstName"
+                                type="text"
+                                placeholder="First name"
+                                labelMarginTop='0'
+                            />
+                            <Input
+                                isSubmitting={isSubmitting}
+                                label="Last name"
+                                name="lastName"
+                                type="text"
+                                placeholder="Last name"
+                                labelMarginTop='0'
+                                marginLeft='16px'
+                            />
+                        </S.Top>
                         <Input
                             isSubmitting={isSubmitting}
                             label="Company name"
@@ -117,8 +122,7 @@ const RegForm = () => {
                                 setFieldValue('confirmPassword', value.trim());
                             }}
                         />
-                        <button type='submit'>submit</button>
-                        {/*<FormButton title='Create account' marginTop='40px' />*/}
+                        <FormButton title='Create account' marginTop='40px' type='submit'/>
                         {/*<S.Bottom>*/}
                         {/*    <S.CreateButton type='submit' disabled={isSubmitting || regLoading}>*/}
                         {/*        {regLoading ? <SpinnerSvg /> : 'Продолжить регистрацию'}*/}

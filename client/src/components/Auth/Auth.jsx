@@ -5,12 +5,10 @@ import poster from '../../assets/auth-poster.png'
 
 const Auth = () => {
     return (
-        // <S.Auth>
-            <>
-                <RegForm />
-                <S.Poster src={poster}/>
-            </>
-        // </S.Auth>
+        <>
+            <RegForm />
+            <S.Poster img={poster}/>
+        </>
     );
 };
 

@@ -4,9 +4,9 @@ import {Form} from 'formik'
 export const Container = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-color: #fff;
-    padding: 120px 0;
     width: 100%;
 `
 export const Title = styled.h2`
@@ -24,4 +24,7 @@ export const StyledForm = styled(Form)`
     flex-direction: column;
     align-items: center;
     width: 380px;
+`
+export const Top = styled.div`
+  display: flex;
 `

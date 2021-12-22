@@ -1,16 +1,18 @@
 import { useField } from 'formik';
-import React, { useEffect } from 'react'
-import { useSelector } from 'react-redux';
+import React from 'react'
 import * as S from './InputStyle'
 
-const Input = ({isSubmitting, label, ...props}) => {
+const Input = ({isSubmitting, label, marginLeft, labelMarginTop, ...props}) => {
     const [field, meta] = useField(props);
 
     return (
-        <>
-            <S.Label htmlFor={props.id || props.name}>{label}</S.Label>
+        <S.Wrapper marginLeft={marginLeft}>
+            <S.Label labelMarginTop={labelMarginTop} htmlFor={props.id || props.name}>{label}</S.Label>
             <S.Input  {...field} {...props} width={props.width} error={meta.error}/>
-        </>
+                {meta.touched && meta.error ? (
+                    <div className="error">{meta.error}</div>
+                ) : null}
+        </S.Wrapper>
     )
 }
 

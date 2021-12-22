@@ -6,16 +6,22 @@ import Content from "../Content/Content";
 import Auth from "../Auth/Auth";
 
 function App() {
+    const isAuth = true
   return (
       <Switch>
-          <Route path='/' exact>
-              <S.App>
-
-                  <Sidebar />
-                  <Content content={<Main />} />
-                  {/*<Auth />*/}
-              </S.App>
-          </Route>
+          <S.App>
+              {isAuth
+                ?
+                  <>
+                      <Sidebar />
+                      <Route path='/main' exact>
+                          <Content content={<Main />} />
+                      </Route>
+                  </>
+                :
+                  <Auth />
+              }
+          </S.App>
       </Switch>
   );
 }

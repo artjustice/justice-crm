@@ -16,7 +16,7 @@ const Sidebar = () => {
                 <LogoSvg />
             </S.Logo>
             <Button
-                path='/'
+                path='/main'
                 icon={<MainSvg />}
                 title='Main page'
             />
