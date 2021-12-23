@@ -4,8 +4,11 @@ import * as S from './RegFormStyle'
 import { Formik, Form } from 'formik';
 import Input from './Input/Input'
 import FormButton from "../../common/FormButton/FormButton";
+import useAction from "../../../hooks/useAction";
 
 const RegForm = () => {
+    const {setAuth} = useAction()
+
     return (
         <S.Container>
             <S.Title>Create an account</S.Title>
@@ -58,6 +61,7 @@ const RegForm = () => {
                 validateOnBlur={false}
                 onSubmit={(values, { setSubmitting }) => {
                     console.log(values)
+                    setAuth(true)
                     setSubmitting(false);
                 }}
             >

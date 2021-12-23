@@ -8,8 +8,11 @@ import { ReactComponent as CabinetSvg } from '../../assets/icons/cabinet.svg'
 import { ReactComponent as LogOutSvg } from '../../assets/icons/log.svg'
 
 import Button from "./Button/Button";
+import useAction from "../../hooks/useAction";
 
 const Sidebar = () => {
+    const {setAuth} = useAction()
+
     return (
         <S.Sidebar>
             <S.Logo>
@@ -40,7 +43,11 @@ const Sidebar = () => {
                 path='/logout'
                 icon={<LogOutSvg />}
                 title='Log out'
-                logOut
+                logout='true'
+                onClick={() => {
+                    setAuth(false);
+                    console.log('click')
+                }}
             />
         </S.Sidebar>
     );

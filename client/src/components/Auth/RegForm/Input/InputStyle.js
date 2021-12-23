@@ -5,14 +5,14 @@ export const Wrapper = styled.div`
   margin-left: ${({marginLeft}) => marginLeft}
 `
 export const Label = styled.div`
-  display: flex;
-  align-self: flex-start;
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  margin-top: ${({labelMarginTop}) => labelMarginTop ? labelMarginTop : '24px'};
-  margin-bottom: 8px;
+      display: flex;
+      align-self: flex-start;
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 12px;
+      margin-top: ${({labelMarginTop}) => labelMarginTop ? labelMarginTop : '24px'};
+      margin-bottom: 8px;
 `
 export const Input = styled.input`
     width: ${({width}) => width ? width : '100%'};

@@ -2,8 +2,8 @@ import styled from 'styled-components/macro'
 import {NavLink} from "react-router-dom";
 
 export const Button = styled(NavLink)`
-  position: ${({logOut}) => logOut ? 'absolute' : 'initial'};
-  bottom: ${({logOut}) => logOut ? '30px' : 'initial'};
+  position: ${({logout}) => logout ? 'absolute' : 'initial'};
+  bottom: ${({logout}) => logout ? '30px' : 'initial'};
   display: flex;
   align-items: center;
   width: 274px;
